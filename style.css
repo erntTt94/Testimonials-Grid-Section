@@ -1,0 +1,122 @@
+body {
+    background-color: hsl(0, 0%, 81%);
+}
+
+#card {
+    width: 90vw;
+    height: 86vh;
+    display: grid;
+    margin: 4em auto;
+    grid-template-columns: repeat(4, minmax(100px, 1fr));
+    grid-template-rows: repeat(2, minmax(100px, 1fr));
+    grid-template-areas:
+        'box-one box-one box-two box-three'
+        'box-four box-five box-five box-three';
+    gap: 20px;
+    font-family: 'Barlow Sami Condensed', sans-serif;
+
+}
+
+.card-boxes {
+    border-radius: 10px;
+    padding: 1.5em;
+}
+
+
+.card-boxes:nth-of-type(1) {
+    grid-area: box-one;
+    background: url(images/bg-pattern-quotation.svg) no-repeat top 0.5rem right 3rem;
+    background-color: hsl(263, 55%, 52%);
+    background-size: 18%;
+}
+
+.card-boxes:nth-of-type(2) {
+    grid-area: box-two;
+    background-color: hsl(217, 19%, 35%);
+}
+
+.card-boxes:nth-of-type(3) {
+    grid-area: box-three;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.card-boxes:nth-of-type(4) {
+    grid-area: box-four;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.card-boxes:nth-of-type(5) {
+    grid-area: box-five;
+    background-color: hsl(219, 29%, 14%);
+
+}
+
+.box-img {
+    position: relative;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    top: -10px;
+}
+
+.card-header {
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 1.2rem;
+    margin-top: 0;
+    color: hsl(0, 0%, 100%);
+}
+
+.card-comment {
+    font-size: 1rem;
+    font-weight: 500;
+    opacity: 70%;
+    margin-bottom: 0;
+    color: hsla(0, 0%, 100%, 0.500);
+}
+
+.name {
+    display: inline-block;
+    position: relative;
+    top: -14px;
+    right: -18px;
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+span {
+    display: block;
+    opacity: 50%;
+    font-weight: 500;
+    padding-top: 0.1rem;
+}
+
+#jeanette .name,
+#jeanette .card-header,
+#jeanette .card-comment,
+#kira .name,
+#kira .card-header,
+#kira .card-comment {
+    color: hsl(217, 19%, 35%);
+}
+
+@media (max-width: 1176px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 1080px) {
+    #card {
+        height: 98%;
+        grid-template-columns: minmax(200px, 1fr);
+        grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+        grid-template-areas:
+            'box-one'
+            'box-two'
+            'box-three'
+            'box-four'
+            'box-five';
+    }
+}
