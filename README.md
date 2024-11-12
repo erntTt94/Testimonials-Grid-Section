@@ -24,7 +24,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/erntTt94/Testimonials-Grid-Section](https://github.com/erntTt94/Testimonials-Grid-Section)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://ernttt94.github.io/Testimonials-Grid-Section/](https://ernttt94.github.io/Testimonials-Grid-Section/)
 
 ## My process
 
